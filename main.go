@@ -18,11 +18,6 @@ var (
 	g_rebase          = flag.Bool("rebase", false, "instead of cloning a new project, rebase an existing one against SVN")
 	g_username        = flag.String("username", "", "username for transports that needs it (http(s), svn)")
 	g_trunk           = flag.String("trunk", "trunk", "subpath to trunk from repository URL")
-	g_branches        = flag.String("branches", "branches", "subpath to branches from repository URL")
-	g_tags            = flag.String("tags", "tags", "subpath to tags from repository URL")
-	g_exclude         = flag.String("exclude", "", "regular expression to filter paths when fetching")
-	g_revision        = flag.String("revision", "", "start importing from SVN revision START_REV; optionally end at END_REV. e.g. -revision START_REV:END_REV")
-
 	g_no_trunk    = flag.Bool("no-trunk", false, "do not import anything from trunk")
 	g_no_branches = flag.Bool("no-branches", false, "do not import anything from branches")
 	g_no_tags     = flag.Bool("no-tags", false, "do not import anything from tags")
